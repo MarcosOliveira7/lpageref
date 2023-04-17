@@ -1,0 +1,104 @@
+body{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  padding: 50px; /* espaçamento */
+
+}
+
+
+header img{    /* esse combinador (header+img) é usado pra area do header, se tivesse so img, ia padronizar todas as imagens */
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  
+}
+
+
+header, footer {
+  background-color: #a6adc5;
+  text-align: center; 
+  color:white;
+  
+
+}
+
+
+nav {
+
+  background-color: #bbc2d6;    
+  text-align: center;
+}
+
+nav ul {
+
+  margin: 0;
+  padding: 25px;
+}
+
+nav ul li { /* foi necessario especificar que era na lista da nav para o display pegar */
+  display: inline;
+  margin: 50px;
+  
+  /* display inliine e display block deixam (inline um ao lado do outro ) block um abaixo do outro) */
+}
+
+nav ul li a {
+
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+section {
+  margin: 50px;
+  padding: 50px;
+  background-color: #E6E6FA;
+  color: #515f69;
+  border-radius: 25px;
+}
+
+
+
+footer {
+  padding: 50px;
+
+}
+
+
+.button{
+
+  border: 0;
+  color: #515f69;
+  padding: 25px;
+
+
+}
+
+
+.button-hover {
+
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #8697A6;
+
+}
+
+
+.invalid {
+  border: 2px solid red;
+}
+
+
+
+/* definir até quando vai */
+
+@media only screen and (max-width: 600px) {
+  nav ul li {
+      margin: 15px;   
+}
+
+}
