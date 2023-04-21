@@ -2,7 +2,7 @@ import React from "react";
 
 function Curriculo() {
     return (
-        <main>
+        <>
             <section>
 
                 <h2> Resumo </h2>
@@ -30,7 +30,7 @@ function Curriculo() {
             </section>
 
 
-        </main>
+        </>
 
     )
 

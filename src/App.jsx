@@ -1,9 +1,13 @@
 import React from "react";
 import './App.css';
 import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
+import Rodape from './components/rodape/Rodape';
 import Curriculo from "./components/curriculo/Curriculo";
 import Portfolio from "./components/portfolio/Portfolio";
+import Contato from "./components/contato/Contato";
+
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
 
 function App() {
   return (
@@ -12,20 +16,30 @@ function App() {
 
       <Header> </Header>
 
+
+    
+      <BrowserRouter> 
+
       <nav>
           <ul>
-            <li className="button"><a href="#"> Currículo </a></li>
-            <li className="button"><a href="pages/portfolio.html"> Portfolio </a></li>
-            <li className="button"><a href="pages/contato.html"> Contato </a></li>
+            <li className="button"><Link to="/">Currículo</Link></li> 
+            <li className="button"><Link to="/portfolio">Portfolio</Link></li>
+            <li className="button"><Link to="/contato">Contato</Link></li> 
+            
           </ul>
       </nav>
-    
-      <Curriculo></Curriculo>
 
 
-      <Portfolio></Portfolio>
 
-      <Footer></Footer>
+        <Routes> 
+          <Route index element = {<Curriculo />} />
+          <Route path= "portfolio" element={<Portfolio />} />
+          <Route path= "contato" element={<Contato />} />
+        </Routes>
+      </BrowserRouter>
+
+
+      <Rodape></Rodape>
 
     </>
   )

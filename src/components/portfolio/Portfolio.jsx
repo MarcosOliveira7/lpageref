@@ -1,33 +1,43 @@
 import React from "react";
 import "./Portfolio.css";
 
+import capaAcademy from "../../assets/whatsapppng.jpg";
 
-function portfolio() {
+function Portfolio() {
+
+    const portfolios = [
+        {
+            link: "https://web.whatsapp.com/",
+            image: "../../assets/whatsapppng.jpg",
+            title: "Marcos Lan"
+        },
+
+        {
+            link: "https://web.whatsapp.com/",
+            image: "../../assets/whatsapppng.jpg",
+            title: "App whatsapp2"
+        },
+
+        {
+            link: "https://web.whatsapp.com/",
+            image: "../../assets/whatsapppng.jpg",
+            title: "Portfolio3"
+        },
+    ];
     return (
         <main>
 
-        <div class= "item-portfolio"> 
-            <a href="https://web.whatsapp.com/" target="_blank">
-                <img src="../assets/whatsapp2.jfif" alt="Capa do whatsapp2"  />
-                <p>App whatsapp2</p>
-            </a>
-        </div>
 
-        
-        <div class= "item-portfolio"> 
-            <a href="https://web.whatsapp.com/" target="_blank">
-                <img src="../assets/whatsapp2.jfif" alt="Capa do whatsapp2" />
-                <p>App whatsapp2</p>
-            </a>
-        </div>
+           { portfolios.map(
+                (portfolio) => 
+                    <div className="item-portfolio">
+                        <a href={portfolio.link} target="_blank">
+                            <img src={capaAcademy} alt="Capa do whatsapp2" />
+                            <p>{portfolio.title}</p>
+                        </a>
+                    </div>
 
-        
-        <div class= "item-portfolio"> 
-            <a href="https://web.whatsapp.com/" target="_blank">
-                <img src="../assets/whatsapp2.jfif" alt="Capa do whatsapp2" />
-                <p>App whatsapp2</p>
-            </a>
-        </div>
+           )}
 
         </main>
 
@@ -37,4 +47,4 @@ function portfolio() {
 
 }
 
-export default portfolio;
+export default Portfolio;

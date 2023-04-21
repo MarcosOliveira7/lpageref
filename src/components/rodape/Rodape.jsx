@@ -1,9 +1,9 @@
 import React from "react";
 
 
-function Footer() {
+function Rodape() {
     return <footer> Desenvolvido com amor, marcao sz </footer>
 
 }
 
-export default Footer;
+export default Rodape;
