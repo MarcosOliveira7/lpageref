@@ -10,7 +10,7 @@ import Portfolio from "./componentes/portfolio/Portfolio";
 import Contato from "./componentes/contato/Contato";
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-a
+
 
 function App() {
   return (
