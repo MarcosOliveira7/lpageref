@@ -1,10 +1,13 @@
 import React from "react";
 import './App.css';
-import Header from './components/header/Header';
-import Rodape from './components/rodape/Rodape';
-import Curriculo from "./components/curriculo/Curriculo";
-import Portfolio from "./components/portfolio/Portfolio";
-import Contato from "./components/contato/Contato";
+
+import BarraNavegacao from "./componentes/BarraNavegacao/BarraNavegacao"
+import Cabecalho from './componentes/cabecalho/Cabecalho';
+import Rodape from './componentes/rodape/Rodape';
+
+import Curriculo from "./componentes/curriculo/Curriculo";
+import Portfolio from "./componentes/portfolio/Portfolio";
+import Contato from "./componentes/contato/Contato";
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
@@ -14,21 +17,13 @@ function App() {
 
     <>
 
-      <Header> </Header>
+      <Cabecalho> </Cabecalho>
 
 
     
       <BrowserRouter> 
 
-      <nav>
-          <ul>
-            <li className="button"><Link to="/">Currículo</Link></li> 
-            <li className="button"><Link to="/portfolio">Portfolio</Link></li>
-            <li className="button"><Link to="/contato">Contato</Link></li> 
-            
-          </ul>
-      </nav>
-
+       <BarraNavegacao></BarraNavegacao>
 
 
         <Routes> 

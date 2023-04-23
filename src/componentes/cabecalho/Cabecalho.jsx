@@ -1,7 +1,9 @@
 import React from 'react';
 import marcosAvatar from "../../assets/marcos-avatar.webp"
 
-function Header() {
+import "./Cabecalho.css";
+
+function Cabecalho() {
 
     return (
 
@@ -18,4 +20,4 @@ function Header() {
 
 }
 
-export default Header;
+export default Cabecalho;
